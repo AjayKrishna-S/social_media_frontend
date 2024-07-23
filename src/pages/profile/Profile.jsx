@@ -55,7 +55,7 @@ const Profile = () => {
       : <>
         <div className="images">
           <img src={"/upload/" + data.coverPic} alt="Cover Picture" className='cover'/>
-          <img src={"/upload/" + data.profilePic} alt="profil Picture" className='profilePicture'/>
+          <img src={"/upload/" + data.profilePic} alt="profile Picture" className='profilePicture'/>
         </div>
         <div className="profileContainer">
           <div className="userInfo">

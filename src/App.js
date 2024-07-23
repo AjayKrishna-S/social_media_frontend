@@ -6,7 +6,6 @@ import NavBar from "./components/navBar/NavBar";
 import RightBar from "./components/rightBar/RightBar";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
-import Cookies from 'js-cookie';
 import { createBrowserRouter, RouterProvider, Outlet, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
