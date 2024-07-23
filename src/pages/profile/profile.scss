@@ -1,0 +1,106 @@
+@import "../../style.scss";
+
+.profile{
+    @include themify($themes){
+        background-color: themed("bgSoft");
+        color: themed("textColor");
+        .images{
+            width: 100%;
+            height: 250px;
+            position: relative;
+            .cover{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .profilePicture{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 5px solid themed("bg");
+                object-fit: cover;
+                position: absolute;
+                top: 175px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+        .profileContainer{
+            padding: 20px 50px;
+
+
+            @include  mobile {
+                padding: 10px 41px;
+            }
+            .userInfo{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 150px;
+                box-shadow: -4px 4px 12px -3px rgba(0, 0, 0, 0.38);
+                border-radius: 20px;
+                background-color: themed("bg");
+                color: themed("bgColor");
+                padding: 70px 50px;
+                margin-bottom: 30px;
+
+                @include  mobile {
+                    flex-direction: column;
+                    gap:15px;
+                }
+    
+                .left{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    @include  mobile {
+                    display: none;
+                    }
+
+                    a{
+                        color: themed("textColorSoft");
+                    }
+                    
+                }
+                .middle{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 55px;
+                    gap: 15px;
+                    flex: 1;  
+                    
+                    @include  mobile {
+                       text-wrap: nowrap;
+                    }
+                    button{
+                        color: white;
+                        border: none;
+                        cursor: pointer ;
+                        border-radius: 8px;
+                        padding: 8px 20px;
+                        background-color: #5271ff;
+                        ;
+                        font-size: 16px;
+                    }
+                    .name{
+                        font-size: 25px;
+                        font-weight: bold;
+                        text-wrap: none;
+                        color: themed("textColor");
+                    }
+                    .about{
+                        min-height: 60px;
+                    }
+                }
+                .right{
+                    display: flex;
+                    flex: 1;;
+                    justify-content: flex-end;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+};
