@@ -17,9 +17,6 @@ function App() {
   const { currentUser } = useContext(AuthContext);
   const { darkMode } = useContext(DarkModeContext);
   const queryClient = new QueryClient()
-  const cookieExists = Cookies.get('accessToken') !== undefined
-
-console.log("token "+Cookies.get('accessToken'));
 
   const ProductedRoute = ({children}) =>{
     if(!currentUser){

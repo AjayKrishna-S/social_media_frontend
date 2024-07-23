@@ -15,7 +15,7 @@ const Comments = (post) => {
             return res.data;})
         }
     });
-
+console.log("comment err "+error);
     const queryClient = useQueryClient(); 
     const mutation = useMutation({
         mutationFn: (newComment) => {

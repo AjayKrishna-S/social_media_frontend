@@ -47,13 +47,15 @@ const Profile = () => {
   const handleFollow = () =>{
     mutation.mutate(rIsLoading ? "loading" :followedUserId.includes(userId))
   }
+  console.log(error);
+  console.log(rError);
   return (
     <div className='profile'>
       {isLoading ? "loading"
       : <>
         <div className="images">
           <img src={"/upload/" + data.coverPic} alt="Cover Picture" className='cover'/>
-          <img src={"/upload/" + data.profilePic} alt="" className='profilePicture'/>
+          <img src={"/upload/" + data.profilePic} alt="profil Picture" className='profilePicture'/>
         </div>
         <div className="profileContainer">
           <div className="userInfo">

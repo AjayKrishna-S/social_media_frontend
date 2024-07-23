@@ -26,7 +26,7 @@ const Post = ({post}) => {
             });
         },
     });
-
+console.log(error);
     const queryClient = useQueryClient(); 
     const mutation = useMutation({
         mutationFn: (liked) => {
