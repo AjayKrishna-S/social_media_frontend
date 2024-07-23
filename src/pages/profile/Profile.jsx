@@ -54,8 +54,8 @@ const Profile = () => {
       {isLoading ? "loading"
       : <>
         <div className="images">
-          <img src={"/upload/" + data.coverPic} alt="Cover Picture" className='cover'/>
-          <img src={"/upload/" + data.profilePic} alt="profile Picture" className='profilePicture'/>
+          <img src={"/upload/" + data.coverPic} alt="Cover img" className='cover'/>
+          <img src={"/upload/" + data.profilePic} alt="pro img" className='profilePicture'/>
         </div>
         <div className="profileContainer">
           <div className="userInfo">
